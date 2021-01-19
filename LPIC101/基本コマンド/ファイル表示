@@ -1,10 +1,10 @@
 # more
 
-#less
+# less
 
-#cat
+# cat
 
-#nl
+# nl
 - 空行には行番号を付けない⇔cat -n
 
 # file
