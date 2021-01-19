@@ -3,3 +3,6 @@
   
 - str_repeat ( string $string , int $times ) : string
   string を times 回を繰り返した文字列を返す。
+
+- abs ( mixed $number ) : int|float
+  number の絶対値を返す。
