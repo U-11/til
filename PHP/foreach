@@ -1,0 +1,45 @@
+# 配列のvalueの合計
+  $total=0;
+　foreach($array as $value){
+    $total=$total+$value;
+　}
+　echo $total;
+
+# 配列のvalue'hoge'の出現回数をカウント
+  $count=0;
+  foreach($array as $value){
+    if($value=='hoge'){
+        $count++;
+    }
+  }
+  echo $count;
+
+# valueでkey(hoge)の順位付けする
+　<?php
+　　// 標準入力から値をループで取得
+　　while($input = trim(fgets(STDIN))){
+		$key_value = explode(",", $input);
+    $key = $key_value[0];
+    $value = $key_value[1];
+    // 連想配列として$itemに代入
+    $result[$key] = $value;
+    }
+    valueが大きい順番に並び替え、hogeが何位なのか数字で出力
+    arsort($result);
+    $i=1;
+    foreach($result as $key => $value){
+      if($key=='勇者'){
+        $rank=$i;
+      }
+      $i++;
+  }
+  print_r($result);
+  echo $rank;
+  ?>
+  
+# 配列同士を組み合わせてリスト出力
+  $item_list=[$key => $value];
+  $item_name=[];
+  foreach($item_name as $key){
+    echo $item_list[$key];
+  }
